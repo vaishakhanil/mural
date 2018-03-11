@@ -9,8 +9,6 @@ function ide() {
 
 
 
-
-
 function about() {
 		// body...
 	document.getElementById('logo').style.visibility="hidden";
@@ -31,15 +29,7 @@ function work() {
 	
 }
 
-function port() {
-		// body...
-	document.getElementById('logo').style.visibility="hidden";
-	document.getElementById('about').style.visibility="hidden";
-	document.getElementById('work').style.visibility="hidden";
-	document.getElementById('port').style.visibility="visible";
-	document.getElementById('contact').style.visibility="hidden";
-	
-}
+
 
 function contact() {
 		// body...
@@ -50,4 +40,12 @@ function contact() {
 	document.getElementById('contact').style.visibility="visible";
 	
 }
+
+$('.navbar-collapse a:not(.dropdown-toggle)').click(function(){
+    $(this).parents('.navbar-collapse').collapse('hide');
+});
+
+$('.carousel').carousel({
+  interval: 250 * 10
+});
 
